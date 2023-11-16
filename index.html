@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML & CSS Tutorial</title>
+            <meta name="description" content="A beautiful Rookie page"/>
+            <meta name="keywords" content="html,css,javascript"/>
+            <meta name="robots" content="nofollow"/>
+            <meta http-equiv="author" content="Chandan Panda"/>
+            <meta http-equiv="pragma" content="no-cache"/>
+            <meta http-equiv="expires" content="Mon, 31 Oct 2023 23:59:59 GMT" />
+        <!-- External CSS -->
+        <link href="index.css" type="text/css" rel="stylesheet"/>
+        <!-- Ineternal CSS -->
+        <style type="text/css">ol,ul,dl{color:rgb(5, 96, 40)}</style>
+    </head>
+    <body>
+       <h1 id="top">Hello<hr /></h1>
+       <h2 id="chap_2">Chapter 1, 2 (TAGS)</h2>
+       <!-- Inline CSS -->
+       <p style="color:rgb(99, 21, 162) ;">This is  my <strong>1<sup>st</sup> </strong><i>Webpage</i>,<br /> <br />And I welcome you all<sub>:)</sub></p>
+       <blockquote><q>It's not always about the money.</q></blockquote>
+       <p><abbr title="Professor">Prof</abbr> is good in maths.</p>
+       <p><abbr title="National Aeronautics and Space Administration">NASA</abbr> wale bohot khatarnak he.</p>
+       <p><cite>A brief history of time</cite> is a great book.</p>
+       <p><dfn>Black Hole</dfn> has a large gravitational field.</p>
+    <address><p>Contact me: <a href="mailto:chikucool2012@gmail.com">chikucool2012@gmail.com</a></p>
+        <p>202,shri <u>jagannath</u> paradise,bhubaneswar</p>
+    </address>
+    <p>It was <del>NOT</del> <ins>good.</ins> Could have <s>been</s> better.</p>
+    <h2 id="chap_3">Chapter 3 (LISTS)</h2>
+    <ol>
+        <li>Potatoes<ol><li>ji</li></ol></li>
+        <li>tomatoes</li>
+    </ol>
+    <ul>
+        <li>cut the Potatoes</li>
+        <li>wash the tomatoes<ul><li>with soap<ul><li>hrrh</li></ul></li><li>with water</li></ul></li>
+    </ul>
+    <dl>
+        <dt>Sushi:-</dt>
+        <dd>raw firsh covered in rice</dd>
+    </dl>
+    <h2 id="chap_4">Chapter 4 (ADDRESS)</h2>
+    <p>Some General Sites:-
+        <ul>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+        </ul>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> (<i>in new window</i>)
+    </p>
+    <h2 id="chap_5">Chapter 5 (IMAGE)</h2>
+    <figure>
+        <img src="images/cat.jpeg" alt="a cute cat" title="Picture of cat." height="225" width="225" />
+        <br />
+        <figcaption>A cute cat </figcaption>
+    </figure>
+    <h2 id="chap_6">Chapter 6 (TABLES)</h2>
+    <p>Random TAble:
+        <table>f
+            <tr>
+                <td>78</td><td>23</td><td>anish</td>
+            </tr>
+            <tr>
+                <td>"dhsk"</td><td>45</td><td>6.309</td>
+            </tr>
+        </table>
+        <br>
+        <h5>Organised Table:</h5>
+        <table id="organised">
+            <tr>
+                <th rowspan="2"><u>Data</u></th>
+                <th colspan="2"><u>Days</u></th>
+            </tr>
+                <tr>
+                    <th scope="col">Saturday</th>
+                    <th scope="col">Sunday</th>
+                </tr>
+                <tr>
+                    <th scope="row">Tickets sold:</th>
+                    <td>120</td>
+                    <td>135</td>
+                </tr>
+                <tr>
+                    <th scope="row">Total Sales:</th>
+                    <td>$600</td>
+                    <td>$675</td>
+                </tr>
+                <tr>
+                    <th>Total profits:</th>
+                    <td>$60</td>
+                    <td>$67.5</td>
+                </tr>
+            <tr>
+                <th>Gross Income:</th>
+                <td colspan="2">$1402.5</td>
+            </tr>
+        </table>
+    </p>
+    <h2 id="chap_7">Chapter 7(FORMS)</h2>
+    <form action="https://www.example.com/login.php" method="post">
+        <fieldset><legend style="text-align: center;">Form</legend>
+        <fieldset>
+        <label for="username">
+        Username:
+            <input type="text" name="username" size="20" maxlength="50" required="required"/></label><br/><br/>
+        <label for="password">Password:
+            <input type="password" name="password" size="20" maxlength="50" required="required" placeholder="password"/></label> 
+        </fieldset>
+        <p>What do you think of this website :</p>
+        <textarea name="comments" rows="5" cols="30" placeholder="Enter your comments..."></textarea>
+        <br/>What is today's date: <input type="date" name="date"/><br/>
+        <p>What is your choice of genre? <br />
+            <input type="radio" name="choice" value="Jazz" checked="checked" />Jazz
+            <input type="radio" name="choice" value="Rock" />Rock
+            <input type="radio" name="choice" value="Classical" />Classical
+        </p>
+        <p>
+            What is your favourite music streaming service(s):<br />
+            <input type="checkbox" name="service" value="Spotify" checked="checked" />Spotify <br />
+            <input type="checkbox" name="service" value="Itunes" />Itunes <br />
+            <input type="checkbox" name="service" value="Youtube" />Youtube
+        </p>
+        <p> Which device do you listen music on ? <br/>
+            <select name="device">
+                <option value="ipod">Ipod</option>
+                <option value="mobile" selected="selected">Mobile</option>
+                <option value="laptop">Laptop</option>
+                <option value="tv">T.V</option>
+                <option value="radio">Radio</option>
+            </select><br /><br />
+            Which instruments do you play ?(<i>you can select more than one option by holding the command key</i>)<br />
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="Guitar">Guitar</option>
+                <option value="Piano">Piano</option>
+                <option value="Drums">Drums</option>
+                <option value="Ukelele">Ukelele</option>
+                <option value="Flute">Flute</option>
+            </select><br/><br/>
+            Enter your Email: <input type="email" name="email"/><br/>
+            Enter an URL: <input type="url" name="website"/>
+            <br/>Search:<br/>
+            <input type="search" name="search" placeholder="Enter Keyword" size="20"><br/>
+            <input type="submit" name="search"/>
+            <fieldset>
+            Upload your song in mp3 format:<br/>
+            <input type="file" name="music" /> 
+            <button><img src="images/add.png" width="10" height="10" alt=""> ADD</button>
+            <input type="hidden" name="bookmark" value="lyrics"/><br/> 
+            <input type="submit" value="Upload"/>
+            </fieldset>
+        </p>
+        <input id="submit" type="submit" name="Subscribe" value="Subscribe" /> OR <br/>
+        <input type="image" src="images/subscribe.png" alt="subscribe" width="100" height="45"/>
+        </fieldset>
+    </form>
+    <h2 id="chap_8">Chapter 8(iFrame and esc chars)</h2>
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" frameborder="0" width="500" height="500" seamless="seamless"></iframe>
+    <p>&copy;Copyright</p>
+    <p>&lt;-less_than &amp;
+        &gt;-greater_than 
+        &pound; &yen; &cent; &reg; &trade; &quot; &lsquo; &rsquo; &ldquo; &rdquo; &times; &divide; 
+    </p>
+    <h2 id="chap_9">Chapter 9(Flash,audio,video)</h2>
+    <div id="bird"><p>Please note: On December 31, 2020 Adobe stopped supporting Flash Player. <br/>Please use the HTML5 audio and video examples instead of the Flash ones.</p></div>
+    <video src="video/puppy.mp4" poster="images/puppy.jpg" width="400" height="300" controls preload="none"><p>If you are seeing this it means the browser doesn't support the video tag of html5 that means it is a old browser ,<em>updrage the god damn browser fast.</em></p></video><br/>
+    <audio controls preload="metadata">
+        <source src="audio/test-audio.ogg"/>
+        <source src="audio/test-audio.mp3"/>
+        <p>If you are seeing this it means the browser doesn't support the video tag of html5 that means it is a old browser ,<em>updrage the god damn browser fast.</em></p>
+    </audio>
+    <h2 id="chap_10">Chapter 10(CSS properties)</h2>
+    <p id="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, illo.</p>
+    <h5 id="font">testing diFFeReNt fonts</h5>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    <p id="font_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis cum quae libero optio unde quos culpa. At itaque quos voluptate ex a aliquam beatae numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error aperiam aliquam animi iste eveniet, doloremque nulla odit exercitationem deserunt libero maiores voluptates harum ad dolor consectetur reprehenderit veniam quia assumenda!</p>
+    <div class="big-image">
+        <h1>I am The BIG Image</h1>
+    </div>
+    <div class="small-image">
+        <h1>I am The small Image</h1>      
+    </div>
+    <div class="grad-one"></div>
+    <p id="par-after">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque officia dolor rem molestias numquam delectus deleniti dignissimos reprehenderit dolore laborum minus esse nesciunt consequatur a, fuga, ad, magni eligendi.</p>
+    <div class="col-one">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus.</p>
+    </div>
+    <div class="col-two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus.</p>
+    </div>
+    <div class="col-three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus.</p>
+    </div><br>
+    <div id="position">
+        <p class="pos-one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum possimus fuga consequuntur.</p>
+        <p class="pos-two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cupiditate vel, eum .
+        <span id="pos-spe">Hello i am absolute</span></p>
+    </div>
+    <button type="button" id="nav-button"><a href="#index">NavBar</a></button>
+    <div class="pos-img">
+        <img src="./images/puppy.jpg" alt="puppy" id="z-index1">
+        <img src="./images/cat.jpeg" alt="cat" id="z-index2">
+        <img src="./images/small-img.jpeg" alt="small" id="z-index3">
+    </div>
+    <div class="img-bandf">
+        <img src="./images/cat.jpeg" alt="cat" id="bandf">
+    </div>
+    <div class="transition-box">Transition</div>
+    <div class="animation-box">Animation</div>
+    <p id="index"><b>GO TO:</b><hr width=100%/>
+        <a href="#top">TOP</a><br />
+        <a href="#chap_2">Chapter-1,2</a><br />
+        <a href="#chap_3">Chapter-3</a><br />
+        <a href="#chap_4">Chapter-4</a><br />
+        <a href="#chap_5">Chapter-5</a><br />
+        <a href="#chap_6">Chapter-6</a><br />
+        <a href="#chap_7">Chapter-7</a><br />
+        <a href="#chap_8">Chapter-8</a><br />
+        <a href="#chap_9">Chapter-9</a><br />
+        <a href="#chap_10">Chapter-10</a><br />
+    <!--Comments goes here-->
+    </body>
+</html>
